@@ -135,6 +135,34 @@
 
         <!-- every mommnet end area  -->
 
+        <!-- toast here  -->
+        <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-end align-items-end w-100">
+          <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="images/box.png" class="rounded me-2" alt="...">
+                <strong class="me-auto">20% off on next booking</strong>
+                
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+
+          </div>
+  
+  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+          crossorigin="anonymous"></script>
+  
+      <!-- This script makes the toast working -->
+      <script>
+          window.onload = (e) => {
+              let myToast = document.querySelector('.toast');
+              let bsToast = new bootstrap.Toast(myToast);
+              bsToast.show();
+          }
+      </script>
+        <!-- end of toast here  -->
+
         <!-- what we offer -->
         <section class="mb-5">
           <div class="what-we-offer-area mt-5">
@@ -413,7 +441,7 @@
             <div class="container">
               <div class="row">
                 <div class="col-md-6">
-                  <div class="faq-question d-flex justify-content-center">
+                  <div class="faq-question d-flex justify-content-center ">
                     <div class="accordion" id="accordionExample">
 
                       <!-- first question  -->
@@ -482,8 +510,8 @@
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="faq-image">
-                    <img src="images/people.png" alt="">
+                  <div class="faq-image mt-md-5 mt-lg-0">
+                    <img class="img-fluid" src="images/people.png" alt="">
                   </div>
                 </div>
               </div>
@@ -494,13 +522,32 @@
         <!-- end of faq section -->
 
         </main>
-    <footer>
+    <footer class="pt-5 pb-5">
         <!-- footer area start  -->
         <div class="container">
           <div class="row">
-            <div class="col-md-6">&copy; 2020 bike. All rights reserved</div>
-            <div class="col-md-6">col</div>
+            <div class="col-md-6">
+              <div class="copyright text-white d-flex justify-content-center justify-content-lg-start text-center  mb-3 align-items-center h-100">
+                &copy; 2020 Akandha Convension Hall. All rights reserved 2022
+              </div>
+             </div>
+            <div class="col-md-6">
+              <div class="app-area">
+                <h4 class="text-white d-flex justify-content-center justify-content-lg-end">Get the App</h4>
+                <div class="google-app-link d-flex justify-content-center justify-content-lg-end mb-2 mt-4">
+                  <img src="images/App Store Badge.png" alt="" srcset="">
+                </div>
+                <div class="apple-app-link d-flex justify-content-center justify-content-lg-end">
+                  <img src="images/Layer 2.png" alt="" srcset="">
+                </div>
+                
+                
+              </div>
+              
+
+            </div>
           </div>
+        </div>
         <!-- end of footer area  -->
     </footer>
     <!-- bootstrap javascript bundle -->

@@ -20,10 +20,17 @@ a#bg-button-heiglight\ {
 a#bg-button-heiglight\ {
   width: 100%;
 }
-.carousel-item{
-  height: 500px;
+footer {
+  background-color: #0B0D17;
 }
 
-.carousel-item img{
-  height: 500px;
+
+@media only screen and (max-width: 688px) {
+  .carousel-item{
+    height: 500px;
+  }
+  
+  .carousel-item img{
+    height: 500px;
+  }
 }
